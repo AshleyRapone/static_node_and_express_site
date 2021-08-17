@@ -1,0 +1,23 @@
+{
+  "name": "static_node_and_express_site",
+  "version": "0.0.1",
+  "description": "My portfolio site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshleyRapone/static_node_and_express_site.git"
+  },
+  "author": "Ashley Rapone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AshleyRapone/static_node_and_express_site/issues"
+  },
+  "homepage": "https://github.com/AshleyRapone/static_node_and_express_site#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}
