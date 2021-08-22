@@ -15,27 +15,30 @@ app.get('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
+    khljhlk
     res.render('about');
 })
 
 app.get('/project/:id', (req, res) => {
-    res.locals.projects = data.projects;
+    res.locals.project = data.projects[req.params.id];
     res.render('project');
 })
 
 app.use((req, res, next) => {
     const err = new Error();
     err.status = 404
-    err.message = "Route not found. Please enter in correct route"
+    err.message = "Oops!  It looks like the page you're looking for does not exist."
     console.log(err.status)
     console.log(err.message)
+    res.render('page-not-found', {err});
   })
 
 app.use((err, req, res, next) => {
     err.status = 500
-    err.message = "Global error handler called"
+    err.message = "Oops!  It looks like something went wrong on the server."
     console.log(err.status);
     console.log(err.message)
+    res.render('error', {err});
 }) 
 
 app.listen(3000);
