@@ -1,8 +1,8 @@
 extends layout.pug
 
 block content
-  h1= `${err.status} - Server Error`
-  p= `${err.message}`
+  h1.error-wrapper= `${err.status} - Server Error`
+  p.error-wrapper= `${err.message}`
 
 
-  a.btn-link(href=`/`) Home
+  a.btn-link.error-button(href=`/`) Home

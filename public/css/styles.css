@@ -362,3 +362,14 @@ nav a span {
     max-width: 1200px;
   }
 }
+
+/* 
+  My custom error page styles
+*/
+.error-button {
+  margin-left: 400px;
+}
+
+.error-wrapper {
+  text-align: center;
+}
