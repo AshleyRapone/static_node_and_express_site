@@ -367,7 +367,8 @@ nav a span {
   My custom error page styles
 */
 .error-button {
-  margin-left: 400px;
+  margin: 0 auto;
+  display: block;
 }
 
 .error-wrapper {
